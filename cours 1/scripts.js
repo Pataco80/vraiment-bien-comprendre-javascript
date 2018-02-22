@@ -30,3 +30,11 @@ console.log(c);
 /* On ne peut pas assigner un nouvel objet ou valeur à une constante, mais on peut modifier une des propriétés
 Attention pas de hoisting avec let et const
 */
+
+/* L'utilisation à l'avenir 
+1 - Ne plus utiliser var
+
+2 - Toujours utiliser const
+
+3 - Si on réassigne une valeur à la variable on utilise le let
+*/
