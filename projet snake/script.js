@@ -45,7 +45,7 @@ window.onload = function() {
         applee = new Apple([10, 10]);
         score = 0;
         clearTimeout(timeOut);
-        delay = 100;
+        delay = 150;
         refreshCanvas();
     }
     // Fonction du rafraichissement du canvas.
@@ -76,7 +76,7 @@ window.onload = function() {
 
     // Augmente la vitesse du serpent
     function speedUp() {
-        delay /= 2;
+        delay -= 20;
     }
 
     // Fonction d'affichage du message Game Over
