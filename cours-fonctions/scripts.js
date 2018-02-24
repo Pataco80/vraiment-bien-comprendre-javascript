@@ -19,10 +19,17 @@ console.log(retFunction(10));
 
 // Les Closures
 
-function multyplayBy(number) {
+function multiplyBy(number) {
     const closedVariable = number;
 
     return function(annotherNumber) {
         return closedVariable * annotherNumber;
     };
 }
+const multiplyByFive = multiplyBy(5);
+
+console.log(multiplyBy());
+console.log("-------------------------------");
+console.log(multiplyByFive(2));
+console.log("-------------------------------");
+console.log(multiplyByFive(3));
