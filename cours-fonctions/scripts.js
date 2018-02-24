@@ -1,12 +1,28 @@
-// Création d'une fonction basique aditionnant 2 à l'argument.
-function addTwo(number) {
-    return number + 2;
+/*
+function myFunction() {
+    return function(number) {
+        return number * 2;
+    };
 }
 
-// fonction executant 
-function myFunction(argFunction, number2) {
-    var x = argFunction(number2); // La variable x contiendra la fonction appelée lors de l'éxecution et le nombre associé
-    console.log(x);
-}
+const retFunction = myFunction();
+console.log(myFunction);
+console.log("-------------------------------");
+console.log(myFunction());
+console.log("-------------------------------");
+console.log(myFunction()(4));
+console.log("-------------------------------");
+console.log(retFunction);
+console.log("-------------------------------");
+console.log(retFunction(10));
+*/
 
-myFunction(addTwo, 5); // MyFunction utilisera executera la fonction addTwo et utilise le chiffre 5 pour additionner
+// Les Closures
+
+function multyplayBy(number) {
+    const closedVariable = number;
+
+    return function(annotherNumber) {
+        return closedVariable * annotherNumber;
+    };
+}
