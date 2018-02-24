@@ -17,7 +17,7 @@ console.log("-------------------------------");
 console.log(retFunction(10));
 */
 
-// Les Closures
+/* Les Closures
 
 function multiplyBy(number) {
     const closedVariable = number;
@@ -33,3 +33,7 @@ console.log("-------------------------------");
 console.log(multiplyByFive(2));
 console.log("-------------------------------");
 console.log(multiplyByFive(3));
+*/
+
+
+// Méfiez-vous des scopes
