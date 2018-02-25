@@ -1,1 +1,1 @@
-console.log(getPassword());
+console.log(getPassword()); // Apprès la IIFEs le module 2 ne pirate pas ma variable getPassword
