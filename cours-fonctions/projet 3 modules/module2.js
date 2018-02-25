@@ -1,0 +1,1 @@
+var myPassword = "00000";
