@@ -1,1 +1,2 @@
-console.log(getPassword()); // Apprès la IIFEs le module 2 ne pirate pas ma variable getPassword
+console.log("Je m'appelle " + module1.myName + ", je suis né en " + module1.anneNaissance + " et j'ai " + module1.monAge + " ans."); // Apprès la IIFEs le module 2 ne pirate pas ma variable getPassword
+console.log("Le mot de passe que j'ai choisi est: " + module1.getPassword());
