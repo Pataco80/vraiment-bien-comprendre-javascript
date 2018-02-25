@@ -19,10 +19,10 @@ celle-ci sera donc connue dans le reste du code*/
 
 // Externalisation de plusieurs variables
 const module1 = (function() {
-    var myName = "Ricardo";
-    var myPassword = "12345";
-    var anneNaissance = 1980;
-    var monAge = calculAge(anneNaissance);
+    const myName = "Ricardo";
+    let myPassword = "12345"; // Une erreur à la ligne 28 apparait si je met un const
+    const anneNaissance = 1980;
+    const monAge = calculAge(anneNaissance);
 
     function setPassword(newPassword) {
         myPassword = newPassword;
@@ -33,7 +33,7 @@ const module1 = (function() {
     }
 
     function calculAge(anneNaissance) {
-        var date = new Date().getFullYear();
+        const date = new Date().getFullYear();
         age = date - anneNaissance;
         return age;
     }
