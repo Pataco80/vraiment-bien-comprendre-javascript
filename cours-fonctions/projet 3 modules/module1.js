@@ -1,11 +1,11 @@
-(function() {
+const getPassword = (function() {
     var myPassword = "12345";
 
     function setPassword(newPassword) {
         myPassword = newPassword;
     }
 
-    function getPassword() {
+    return function() {
         return myPassword;
     }
 }()); // Dans cet état, tout le module à été rendu privé. 
